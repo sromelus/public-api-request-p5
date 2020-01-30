@@ -1,4 +1,4 @@
-/* ===================================== 
+/* =====================================
    Public API Request
 ======================================== */
 
@@ -9,14 +9,18 @@
 }
 
 html, body {
-    width: 100%;
-    max-width: 100%;
+	background-image: url('https://media.istockphoto.com/vectors/abstract-molecular-connection-vector-id590158344');
+  background-size: 80%;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 100%;
+	max-width: 100%;
 }
 
 body {
-    font-family: "Nunito", sans-serif;
-    text-align: center;
-    background: rgba(235, 235, 235, 0.9);
+	font-family: "Nunito", sans-serif;
+	text-align: center;
+	background: rgba(235, 235, 235, 0.9);
 }
 
 header {
@@ -63,7 +67,7 @@ header h1 {
 }
 
 
-/* ===================================== 
+/* =====================================
    Gallery
 ======================================== */
 
@@ -76,7 +80,7 @@ header h1 {
     max-width: 1200px;
     margin: auto;
 }
-  
+
 .card {
     display: flex;
     flex-direction: row;
@@ -120,7 +124,7 @@ header h1 {
 }
 
 
-/* ===================================== 
+/* =====================================
    Modal
 ======================================== */
 
@@ -206,13 +210,13 @@ header h1 {
     transition: .4s ease-out;
     outline: none;
   }
-  
 
-/* ===================================== 
+
+/* =====================================
    Media Queries
 ======================================== */
 
-/* ===================================== 
+/* =====================================
    Tablet
 ======================================== */
 
@@ -240,9 +244,9 @@ header h1 {
 }
 
 
-/* ===================================== 
+/* =====================================
    Desktop
-   Hover styles on desktop 
+   Hover styles on desktop
 ======================================== */
 
 @media (min-width: 1024px) {
@@ -253,11 +257,11 @@ header h1 {
     }
 
     .card:hover .card-text {
-        color: rgba(25, 25, 25, 1); 
+        color: rgba(25, 25, 25, 1);
     }
 
     .btn:hover {
         background: rgba(255, 255, 255, 1);
-        color: rgba(25, 25, 25, 1); 
+        color: rgba(25, 25, 25, 1);
     }
 }
