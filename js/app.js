@@ -105,7 +105,7 @@ fetch("https://randomuser.me/api/?nat=us&results=12")
                  <p class="modal-text">${profile.email}</p>
                  <p class="modal-text cap">${profile.location.city}</p>
                  <hr>
-                 <p class="modal-text">${profile.cell}</p>
+                 <p class="modal-text">${profile.cell.replace('-', ' ')}</p>
                  <p class="modal-text">${profile.location.street.number} ${profile.location.street.name}, ${profile.location.city}, ${profile.location.state} ${profile.location.postcode}</p>
                  <p class="modal-text">Birthday: ${new Date(profile.dob.date).getMonth()}/${new Date(profile.dob.date).getDay()}/${new Date(profile.dob.date).getFullYear()}</p>
              </div>
