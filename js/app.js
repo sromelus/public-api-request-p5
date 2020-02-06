@@ -1,6 +1,8 @@
 
 document.querySelector('#gallery').innerText = 'Data loading.....';
 
+//Requesting a random urers from the random user api using a get fetch request.
+
 fetch("https://randomuser.me/api/?nat=us&results=12")
 .then(response => {
   if(response.ok){
@@ -71,6 +73,22 @@ fetch("https://randomuser.me/api/?nat=us&results=12")
      })
    })
  };
+
+ const search = document.querySelector('.search-container')
+
+ /**
+ * This function displays the search bar
+ * @return {html}
+ **/
+// search function not fully functional but will be soon updated
+ generateSearch = () => {
+   return  `<form action="#" method="get">
+             <input type="search" id="search-input" class="search-input" placeholder="Search...">
+             <input type="submit" value="&#x1F50D;" id="search-submit" class="search-submit">
+            </form>`
+ }
+
+ search.innerHTML = generateSearch();
 
  /**
  * This function render the modal for the employee card when clicked
